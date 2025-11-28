@@ -163,19 +163,3 @@ footer a {
         font-size: 1.3em;
     }
 }
-```
-
-### 3. GitHub Pages'i Aktifleştirme
-
-1. Repository'nizde **Settings** sekmesine gidin
-2. Sol menüden **Pages** seçeneğini bulun
-3. **Source** bölümünde "Deploy from a branch" seçin
-4. **Branch** olarak `main` (veya `master`) seçin
-5. Klasör olarak `/ (root)` seçin
-6. **Save** butonuna tıklayın
-
-### 4. URL'leri Alma
-
-Birkaç dakika sonra siteniz yayına alınacak. URL'niz şu formatta olacak:
-```
-https://[kullanıcı-adınız].github.io/[repo-adı]/
