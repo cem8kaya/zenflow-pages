@@ -1,12 +1,471 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=./privacy.html">
-    <title>ZenFlow - Privacy & Support</title>
+    <title>ZenFlow - Gizlilik Politikası ve Destek</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: #f8f9fa;
+            padding: 15px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #e9ecef;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin: 25px 0 15px;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 30px;
+        }
+
+        .highlight {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
+        }
+
+        .contact-box a:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            cursor: pointer;
+            font-weight: 600;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .nav {
+                flex-direction: column;
+            }
+
+            .nav a {
+                margin: 5px 0;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to Privacy Policy...</p>
+    <div class="lang-switch" onclick="toggleLanguage()">
+        <span id="lang-btn">🇬🇧 English</span>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>🧘‍♀️ ZenFlow</h1>
+            <p id="header-subtitle">Nefes, Meditasyon & İçsel Huzur</p>
+        </header>
+
+        <nav class="nav">
+            <a href="#privacy">Gizlilik Politikası</a>
+            <a href="#support">Destek</a>
+            <a href="#faq">S.S.S.</a>
+        </nav>
+
+        <div class="content">
+            <!-- Turkish Content -->
+            <div id="content-tr">
+                <section id="privacy">
+                    <h2>🔒 Gizlilik Politikası</h2>
+                    
+                    <div class="highlight">
+                        <strong>Son Güncelleme:</strong> 29 Kasım 2024<br>
+                        <strong>Yürürlük Tarihi:</strong> 29 Kasım 2024
+                    </div>
+
+                    <h3>1. Veri Toplama</h3>
+                    <p>ZenFlow, <strong>hiçbir kişisel veri toplamaz</strong>. Uygulamımız tamamen offline çalışır ve herhangi bir sunucuya veri göndermez.</p>
+
+                    <h3>2. Yerel Veri Depolama</h3>
+                    <p>Tüm verileriniz cihazınızda yerel olarak saklanır:</p>
+                    <ul>
+                        <li>Meditasyon seansı geçmişi</li>
+                        <li>Nefes egzersizi tercihleri</li>
+                        <li>Zen Bahçesi ilerlemesi</li>
+                        <li>Kazanılan rozetler ve streak'ler</li>
+                        <li>Uygulama ayarları</li>
+                    </ul>
+
+                    <h3>3. HealthKit Entegrasyonu</h3>
+                    <p>ZenFlow, opsiyonel olarak Apple HealthKit ile entegre olabilir:</p>
+                    <ul>
+                        <li>Meditasyon süreleri "Mindfulness Minutes" olarak kaydedilebilir</li>
+                        <li>HealthKit kullanımı tamamen opsiyoneldir</li>
+                        <li>Veriler yalnızca Apple'ın Health uygulamasında saklanır</li>
+                        <li>ZenFlow, HealthKit verilerine sunucu üzerinden erişemez</li>
+                    </ul>
+
+                    <h3>4. Bildirimler</h3>
+                    <p>Uygulama, hatırlatıcı bildirimleri için izin isteyebilir:</p>
+                    <ul>
+                        <li>Bildirimler tamamen opsiyoneldir</li>
+                        <li>Yerel bildirimlerdir (push notification değil)</li>
+                        <li>Herhangi bir sunucuya veri gönderilmez</li>
+                    </ul>
+
+                    <h3>5. Üçüncü Taraf Servisler</h3>
+                    <p>ZenFlow, <strong>hiçbir üçüncü taraf analitik servisi kullanmaz</strong>:</p>
+                    <ul>
+                        <li>Google Analytics yok</li>
+                        <li>Facebook SDK yok</li>
+                        <li>Reklam ağı yok</li>
+                        <li>Crash reporting servisi yok</li>
+                    </ul>
+
+                    <h3>6. Veri Güvenliği</h3>
+                    <p>Verileriniz güvende çünkü:</p>
+                    <ul>
+                        <li>Hiçbir veri sunucuya gönderilmez</li>
+                        <li>Tüm veriler cihazınızda şifrelenir (iOS encryption)</li>
+                        <li>İnternet bağlantısı gerektirmez</li>
+                    </ul>
+
+                    <h3>7. Çocukların Gizliliği</h3>
+                    <p>ZenFlow, 4+ yaş kategorisindedir. Uygulama, herhangi bir yaş grubundan veri toplamaz.</p>
+
+                    <h3>8. Değişiklikler</h3>
+                    <p>Bu gizlilik politikasında yapılan değişiklikler, bu sayfada yayınlanacaktır. Önemli değişikliklerde, uygulama içi bildirim yapılacaktır.</p>
+
+                    <h3>9. İletişim</h3>
+                    <p>Gizlilik politikası hakkında sorularınız için:</p>
+                    <div class="contact-box">
+                        <p>📧 E-posta: <a href="mailto:canarcho@gmail.com">canarcho@gmail.com</a></p>
+                    </div>
+                </section>
+
+                <section id="support">
+                    <h2>💬 Destek</h2>
+                    
+                    <h3>Bize Ulaşın</h3>
+                    <p>ZenFlow kullanımı hakkında yardıma mı ihtiyacınız var? Size yardımcı olmaktan mutluluk duyarız!</p>
+                    
+                    <div class="contact-box">
+                        <h3>📨 Destek E-postası</h3>
+                        <p><a href="mailto:canarcho@gmail.com">canarcho@gmail.com</a></p>
+                        <p style="margin-top: 15px; font-size: 0.9em;">Genellikle 24-48 saat içinde yanıt veriyoruz</p>
+                    </div>
+
+                    <h3>Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="#faq" style="color: #667eea; font-weight: 600;">Sık Sorulan Sorular</a></li>
+                        <li><a href="#privacy" style="color: #667eea; font-weight: 600;">Gizlilik Politikası</a></li>
+                    </ul>
+                </section>
+
+                <section id="faq">
+                    <h2>❓ Sık Sorulan Sorular (S.S.S.)</h2>
+
+                    <h3>ZenFlow ücretsiz mi?</h3>
+                    <p>Evet, ZenFlow tamamen ücretsiz kullanılabilir. Temel özellikler herkes için açıktır. Premium özellikler için tek seferlik ömür boyu ödeme seçeneği sunuyoruz.</p>
+
+                    <h3>İnternet bağlantısı gerekli mi?</h3>
+                    <p>Hayır! ZenFlow tamamen offline çalışır. Uçak modunda bile kullanabilirsiniz.</p>
+
+                    <h3>Verilerim güvende mi?</h3>
+                    <p>Kesinlikle. Hiçbir veri sunucuya gönderilmez. Tüm verileriniz cihazınızda yerel olarak saklanır.</p>
+
+                    <h3>HealthKit entegrasyonu nasıl çalışır?</h3>
+                    <p>Ayarlar > HealthKit bölümünden etkinleştirebilirsiniz. Meditasyon seanslarınız otomatik olarak Apple Health'e "Mindfulness Minutes" olarak kaydedilir.</p>
+
+                    <h3>Nefes egzersizlerini özelleştirebilir miyim?</h3>
+                    <p>Evet! Her nefes egzersizinin süre, tempo ve tekrar sayısını ayarlayabilirsiniz.</p>
+
+                    <h3>Zen Bahçesi nasıl çalışır?</h3>
+                    <p>Her meditasyon seansı sonrası bahçenizdeki ağaç büyür. 7 büyüme aşaması vardır ve toplam meditasyon sürenize göre gelişir.</p>
+
+                    <h3>Bildirimler nasıl çalışır?</h3>
+                    <p>Ayarlar > Bildirimler'den günlük hatırlatıcılar ayarlayabilirsiniz. Bildirimler tamamen opsiyoneldir ve tamamen yereldir (push notification değil).</p>
+
+                    <h3>Premium özellikleri nasıl satın alabilirim?</h3>
+                    <p>Ayarlar > Premium bölümünden tek seferlik ömür boyu satın alma yapabilirsiniz. Premium özelliklere anında erişim sağlarsınız.</p>
+
+                    <h3>Verilerimi yedekleyebilir miyim?</h3>
+                    <p>Evet, verileriniz iOS'un otomatik iCloud yedeklemesine dahildir. Yeni bir cihaza geçtiğinizde verileriniz geri yüklenir.</p>
+
+                    <h3>Hangi iOS sürümlerini destekliyorsunuz?</h3>
+                    <p>ZenFlow, iOS 16.0 ve üzeri sürümleri destekler.</p>
+                </section>
+            </div>
+
+            <!-- English Content (Hidden by default) -->
+            <div id="content-en" style="display: none;">
+                <section id="privacy-en">
+                    <h2>🔒 Privacy Policy</h2>
+                    
+                    <div class="highlight">
+                        <strong>Last Updated:</strong> November 29, 2024<br>
+                        <strong>Effective Date:</strong> November 29, 2024
+                    </div>
+
+                    <h3>1. Data Collection</h3>
+                    <p>ZenFlow <strong>does not collect any personal data</strong>. Our app works completely offline and does not send any data to servers.</p>
+
+                    <h3>2. Local Data Storage</h3>
+                    <p>All your data is stored locally on your device:</p>
+                    <ul>
+                        <li>Meditation session history</li>
+                        <li>Breathing exercise preferences</li>
+                        <li>Zen Garden progress</li>
+                        <li>Earned badges and streaks</li>
+                        <li>App settings</li>
+                    </ul>
+
+                    <h3>3. HealthKit Integration</h3>
+                    <p>ZenFlow can optionally integrate with Apple HealthKit:</p>
+                    <ul>
+                        <li>Meditation durations can be saved as "Mindfulness Minutes"</li>
+                        <li>HealthKit usage is completely optional</li>
+                        <li>Data is only stored in Apple's Health app</li>
+                        <li>ZenFlow cannot access HealthKit data through servers</li>
+                    </ul>
+
+                    <h3>4. Notifications</h3>
+                    <p>The app may request permission for reminder notifications:</p>
+                    <ul>
+                        <li>Notifications are completely optional</li>
+                        <li>They are local notifications (not push notifications)</li>
+                        <li>No data is sent to any server</li>
+                    </ul>
+
+                    <h3>5. Third-Party Services</h3>
+                    <p>ZenFlow <strong>does not use any third-party analytics services</strong>:</p>
+                    <ul>
+                        <li>No Google Analytics</li>
+                        <li>No Facebook SDK</li>
+                        <li>No ad networks</li>
+                        <li>No crash reporting services</li>
+                    </ul>
+
+                    <h3>6. Data Security</h3>
+                    <p>Your data is secure because:</p>
+                    <ul>
+                        <li>No data is sent to servers</li>
+                        <li>All data is encrypted on your device (iOS encryption)</li>
+                        <li>No internet connection required</li>
+                    </ul>
+
+                    <h3>7. Children's Privacy</h3>
+                    <p>ZenFlow is rated 4+. The app does not collect data from any age group.</p>
+
+                    <h3>8. Changes</h3>
+                    <p>Changes to this privacy policy will be published on this page. Important changes will be announced in-app.</p>
+
+                    <h3>9. Contact</h3>
+                    <p>For questions about our privacy policy:</p>
+                    <div class="contact-box">
+                        <p>📧 Email: <a href="mailto:canarcho@gmail.com">canarcho@gmail.com</a></p>
+                    </div>
+                </section>
+
+                <section id="support-en">
+                    <h2>💬 Support</h2>
+                    
+                    <h3>Contact Us</h3>
+                    <p>Need help using ZenFlow? We're here to help!</p>
+                    
+                    <div class="contact-box">
+                        <h3>📨 Support Email</h3>
+                        <p><a href="mailto:canarcho@gmail.com">canarcho@gmail.com</a></p>
+                        <p style="margin-top: 15px; font-size: 0.9em;">We typically respond within 24-48 hours</p>
+                    </div>
+
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#faq-en" style="color: #667eea; font-weight: 600;">Frequently Asked Questions</a></li>
+                        <li><a href="#privacy-en" style="color: #667eea; font-weight: 600;">Privacy Policy</a></li>
+                    </ul>
+                </section>
+
+                <section id="faq-en">
+                    <h2>❓ Frequently Asked Questions (FAQ)</h2>
+
+                    <h3>Is ZenFlow free?</h3>
+                    <p>Yes, ZenFlow is completely free to use. Basic features are available to everyone. We offer a one-time lifetime payment option for premium features.</p>
+
+                    <h3>Do I need an internet connection?</h3>
+                    <p>No! ZenFlow works completely offline. You can even use it in airplane mode.</p>
+
+                    <h3>Is my data safe?</h3>
+                    <p>Absolutely. No data is sent to servers. All your data is stored locally on your device.</p>
+
+                    <h3>How does HealthKit integration work?</h3>
+                    <p>You can enable it from Settings > HealthKit. Your meditation sessions are automatically saved to Apple Health as "Mindfulness Minutes".</p>
+
+                    <h3>Can I customize breathing exercises?</h3>
+                    <p>Yes! You can adjust duration, tempo, and repetition count for each breathing exercise.</p>
+
+                    <h3>How does the Zen Garden work?</h3>
+                    <p>After each meditation session, your garden tree grows. There are 7 growth stages that develop based on your total meditation time.</p>
+
+                    <h3>How do notifications work?</h3>
+                    <p>You can set daily reminders from Settings > Notifications. Notifications are completely optional and fully local (not push notifications).</p>
+
+                    <h3>How can I purchase premium features?</h3>
+                    <p>You can make a one-time lifetime purchase from Settings > Premium. You get instant access to premium features.</p>
+
+                    <h3>Can I backup my data?</h3>
+                    <p>Yes, your data is included in iOS's automatic iCloud backup. When you switch to a new device, your data is restored.</p>
+
+                    <h3>Which iOS versions do you support?</h3>
+                    <p>ZenFlow supports iOS 16.0 and later versions.</p>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 ZenFlow. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Made with 💜 for inner peace</p>
+        </footer>
+    </div>
+
+    <script>
+        let currentLang = 'tr';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'tr' ? 'en' : 'tr';
+            
+            if (currentLang === 'en') {
+                document.getElementById('content-tr').style.display = 'none';
+                document.getElementById('content-en').style.display = 'block';
+                document.getElementById('lang-btn').textContent = '🇹🇷 Türkçe';
+                document.getElementById('header-subtitle').textContent = 'Breathe, Meditate & Find Inner Peace';
+                document.querySelector('.nav a[href="#privacy"]').textContent = 'Privacy Policy';
+                document.querySelector('.nav a[href="#support"]').textContent = 'Support';
+                document.querySelector('.nav a[href="#faq"]').textContent = 'FAQ';
+            } else {
+                document.getElementById('content-tr').style.display = 'block';
+                document.getElementById('content-en').style.display = 'none';
+                document.getElementById('lang-btn').textContent = '🇬🇧 English';
+                document.getElementById('header-subtitle').textContent = 'Nefes, Meditasyon & İçsel Huzur';
+                document.querySelector('.nav a[href="#privacy"]').textContent = 'Gizlilik Politikası';
+                document.querySelector('.nav a[href="#support"]').textContent = 'Destek';
+                document.querySelector('.nav a[href="#faq"]').textContent = 'S.S.S.';
+            }
+        }
+    </script>
 </body>
 </html>
